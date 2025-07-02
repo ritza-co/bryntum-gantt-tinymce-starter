@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "tasks": {
+    "rows": [
+      {
+        "id": 1,
+        "name": "Project Planning",
+        "description": "<h3>Project Planning Phase</h3><p>This phase involves <strong>initial planning</strong> and <em>requirement gathering</em>.</p><ul><li>Define project scope</li><li>Identify stakeholders</li><li>Create project timeline</li></ul>",
+        "startDate": "2025-01-01",
+        "duration": 5,
+        "percentDone": 100,
+        "expanded": true
+      },
+      {
+        "id": 2,
+        "name": "Requirements Analysis",
+        "description": "<h3>Requirements Analysis</h3><p>Detailed analysis of project requirements including:</p><ol><li>Functional requirements</li><li>Non-functional requirements</li><li>Technical constraints</li></ol><p><strong>Note:</strong> This is a critical phase that requires stakeholder input.</p>",
+        "parentId": 1,
+        "startDate": "2025-01-01",
+        "duration": 3,
+        "percentDone": 100
+      },
+      {
+        "id": 3,
+        "name": "Resource Planning",
+        "description": "<h3>Resource Planning</h3><p>Planning and allocation of resources for the project.</p><blockquote><p>Proper resource planning is key to project success.</p></blockquote>",
+        "parentId": 1,
+        "startDate": "2025-01-04",
+        "duration": 2,
+        "percentDone": 80
+      },
+      {
+        "id": 4,
+        "name": "Development Phase",
+        "description": "<h3>Development Phase</h3><p>Main development activities including:</p><ul><li>Frontend development</li><li>Backend development</li><li>Database design</li><li>API development</li></ul>",
+        "startDate": "2025-01-06",
+        "duration": 15,
+        "percentDone": 30,
+        "expanded": true
+      },
+      {
+        "id": 5,
+        "name": "Frontend Development",
+        "description": "<h3>Frontend Development</h3><p>Development of user interface components using modern frameworks.</p><p>Technologies: <code>React</code>, <code>TypeScript</code>, <code>CSS3</code></p>",
+        "parentId": 4,
+        "startDate": "2025-01-06",
+        "duration": 8,
+        "percentDone": 50
+      },
+      {
+        "id": 6,
+        "name": "Backend Development",
+        "description": "<h3>Backend Development</h3><p>Server-side development and API creation.</p><p>Key components:</p><ul><li>REST API endpoints</li><li>Authentication system</li><li>Data validation</li><li>Error handling</li></ul>",
+        "parentId": 4,
+        "startDate": "2025-01-10",
+        "duration": 10,
+        "percentDone": 20
+      },
+      {
+        "id": 7,
+        "name": "Testing Phase",
+        "description": "<h3>Testing Phase</h3><p>Comprehensive testing of the application including:</p><table><tr><th>Test Type</th><th>Status</th></tr><tr><td>Unit Testing</td><td>In Progress</td></tr><tr><td>Integration Testing</td><td>Pending</td></tr><tr><td>User Acceptance Testing</td><td>Pending</td></tr></table>",
+        "startDate": "2025-01-21",
+        "duration": 5,
+        "percentDone": 0
+      },
+      {
+        "id": 8,
+        "name": "Deployment",
+        "description": "<h3>Deployment</h3><p>Final deployment to production environment.</p><p><strong>Deployment checklist:</strong></p><ul><li>Environment setup</li><li>Database migration</li><li>SSL certificate configuration</li><li>Monitoring setup</li></ul>",
+        "startDate": "2025-01-26",
+        "duration": 3,
+        "percentDone": 0
+      }
+    ]
+  },
+  "dependencies": {
+    "rows": [
+      { "fromTask": 2, "toTask": 3 },
+      { "fromTask": 1, "toTask": 4 },
+      { "fromTask": 4, "toTask": 7 },
+      { "fromTask": 7, "toTask": 8 }
+    ]
+  }
+}
