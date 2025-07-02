@@ -1,4 +1,4 @@
-# Using the TinyMCE rich text editor in Bryntum Grid: Starter code
+# Using the TinyMCE rich text editor in Bryntum Gantt: Starter code
 
 This starter project was generated using the [Vite with JavaScript](https://vite.dev/guide/#scaffolding-your-first-vite-project) starter template.
 
