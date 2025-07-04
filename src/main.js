@@ -65,19 +65,4 @@ const gantt = new Gantt({
 
     viewPreset : 'weekAndMonth',
 
-    features : {
-        taskEdit : {
-            items : {
-                generalTab : {
-                    items : {
-                        descriptionField : {
-                            type   : 'tinymcefield',
-                            height : 300,
-                            label  : 'Description'
-                        }
-                    }
-                }
-            }
-        }
-    }
 });
